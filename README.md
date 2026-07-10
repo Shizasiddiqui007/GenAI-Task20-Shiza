@@ -11,11 +11,12 @@ A **Content-Based Movie Recommendation System** built using **TF-IDF Vectorizati
 ---
 
 ## 🗂️ Dataset
-- Custom dataset: `movies.csv`
-- Contains **50 movies** with the following columns:
-  - `title` — Movie name
-  - `genre` — Genre(s) of the movie
-  - `overview` — Short description/plot
+- **Source:** [IMDB Top 1000 Movies - Kaggle](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows)
+- Contains **1000 movies** with the following columns used:
+  - `Series_Title` — Movie name
+  - `Genre` — Genre(s) of the movie
+  - `Overview` — Short description/plot
+
 
 ---
 

@@ -8,7 +8,9 @@ import nltk
 nltk.download('stopwords', quiet=True)
 
 # loading data
-df = pd.read_csv('movies.csv')
+df = pd.read_csv('imdb_top_1000.csv')
+# rename columns to match our code
+df = df.rename(columns={'Series_Title': 'title', 'Genre': 'genre', 'Overview': 'overview'})
 
 stop_words = set(stopwords.words('english'))
 
@@ -19,6 +21,7 @@ def clean_text(text):
     return ' '.join(words)
 
 df['combined'] = df['genre'].fillna('') + ' ' + df['overview'].fillna('')
+df = df.dropna(subset=['title']).reset_index(drop=True)
 df['clean_text'] = df['combined'].apply(clean_text)
 
 # tfidf and similarity
