@@ -68,7 +68,7 @@ App will open at: `http://localhost:8501`
 
 ## 🌐 Deployed App
 
-> 🔗 [Link will be added after deployment]
+> 🔗 [https://genai-task20-shiza.onrender.com](https://genai-task20-shiza.onrender.com)
 
 ---
 
